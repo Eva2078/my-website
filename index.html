@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru"
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Сайт Евы</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <script> 
+    const languageBtn = document.getElementById("language-btn");
+
+    let currentLanguage = "ru";
+
+    languageBtn.addEventListener("click" , () => {
+    currentLanguage = currentLanguage ===currentLanguage
+    "ru" ? "en" : "ru";
+    document.querySelectorAll("[data-ru]").forEach(element => {
+        element.textContent = textContent = 
+        element.getAttribute('data-${currentLanguage}');
+    });
+
+    languageBtn.textContent = currentLanguage === "ru" ? "EN" : "RU";
+});
+    </script>
+
+    <button id="language-toggle">🗽 English</button>
+    <header>
+        <h1 data-ru="Добро пожаловать" data-en="Welkome">Добро пожаловать</h1>
+        <p data-ru="Это мой сайт" data-en="This is my website">Это мой сайт</p>
+
+        <button class="menu-button" id="menuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#about">Обо мне</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section id="home">
+       <div class="hero">
+        <img src="photo.jpg" alt="Моя фотография" class="profile-photo">
+        <p class="hello">ПРИВЕТ 👋 </p>
+
+        <h1 data-ru="Добро пожаловать<br>на мой сайт!" data-en="Welcome<br>to my website!">Добро пожаловать<br> на мой сайт!</h1>
+
+        <p class="description">
+            Здесь я рассказываю о себе,
+            своих интересах и том, чему учусь.
+        </p>
+
+        <a href="#about" data-ru="Узнать обо мне" data-en="Learn about me">Узнать обо мне →</a>
+       </div>
+    </section>
+
+    <section id="about">
+
+        <div class="about-container">
+
+            <div class="about-photo">
+                <img src="photo.jpg" alt="Моя фотография">
+            </div>
+
+            <div class="about-text">
+                <p class="about-label">ОБО МНЕ</p>
+
+                <h2>Немного обо мне</h2>
+
+                <p>
+                    Привет! Меня зовут Ева
+                    Я изучаю программирование и учусь создаватьсвои сайты.
+                </p>
+
+                <p>
+                    Мне нравится узнавать новое, развиваться и постепенно превращать свои идеи в настоящие проекты.
+                </p>
+            </div>
+        </div>
+
+       <h2>Обо мне</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Мои интересы</h3>
+                <p>Мне нравится изучать новое и развиваться.</p>
+            </div>
+
+            <div class="card">
+                <h3>📐 Математика</h3>
+                <p>Я хочу лучше понимать математику.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Программирование</h3>
+                <p>Я учусь создавать сайты.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Здесь можно разместить мои контакты.</p>
+    </section>
+
+
+    <header>
+       <h1>Привет! Я Ева</h1>
+       <p>Добро пожаловать на мой первый сайт!</p>
+    </header>
+    
+    <main>
+
+        <h2>Обо мне</h2>
+
+        <p> 
+            Я учусь создавать сайты и изучаю программирование.
+        </p>
+
+        <h2>Мои интересы</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📐 Математика</h3>
+                <p>Хочу научиться действительно понимать математику.</p>
+            </div>
+
+        <div>
+
+            <div class="card">
+                <h3>💻 Программирование</h3>
+                <p>Сейчас я учусь создавать свои сайты.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌎 Английский</h3>
+                <p> Изучаю английский и постепенно улучшаю свой уровень.</p>
+            </div>
+        </div>
+
+        <p>
+            Математика, программирование, английский язык и творчество.
+        </p>
+
+    </main>
+    <footer> 
+        <p>Мой первый сайт © 2026</p>
+    </footer>
+
+</body>
+<body>
+
+    <h1>Мой сайт</h1>
+
+    <button id="myButton">Нажми на меня</button>
+
+    <button id="themeButton" aria-label="Переключить тему">
+        🌙
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div class="footer-content">
+
+        <h2>Мой сайт</h2>
+
+        <p>Спасибо, что заглянул(а) сюда!</p>
+
+        <div class="socials">
+
+            <a href="https://t.me/d4ivol0ve35" aria-label="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com/eviks658" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/n2hn8stwtn-sys" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            &copy; 2026 Мой сайт. Все права защищены.
+        </p>
+        
+    </div>
+</footer>
+</html>
