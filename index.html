@@ -14,7 +14,7 @@
 <body>
     <button id="language-toggle">🗽 English</button>
     <script>
-     const languageBtn = document.getElementById("language-btn");
+     const languageBtn = document.getElementById("language-toggle");
 
     let currentLanguage = "ru";
 
@@ -26,7 +26,7 @@
         element.getAttribute('data-${currentLanguage}');
     });
 
-    languageBtn.textContent = currentLanguage === "ru" ? "EN" : "RU";
+    languageBtn.textContent = currentLanguage === "ru" ? "English" : "Русский";
 });
 </script>
     <header>
