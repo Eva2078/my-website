@@ -182,21 +182,23 @@ nav a:hover::after {
 .hero {
     position: relative;
 
-    max-width: 1000px;
-    padding: 60px 40px;
+    max-width: 1050px;
+    padding: 75px 50px;
 
     text-align: center;
 
-    background: rgba(255, 255, 255, 0.45);
+    background: 
+             linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(237, 247, 239, 0.75)
+             );
 
     border: 1px solid rgba(47, 111, 78, 0.12);
 
-    border-radius: 32px;
+    border-radius: 36px;
 
     box-shadow:
-        0 25px 60px rgba(23, 61, 43, 0.10);
+        0 30px 80px rgba(23, 61, 43, 0.14);
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(18px);
 
     overflow: hidden;
 }
