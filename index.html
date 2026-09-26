@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
 
     <title>Сайт Евы</title>
 
@@ -12,26 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <button id="language-toggle">🗽 English</button>
-    <script>
-     const languageBtn = document.getElementById("language-toggle");
-
-    let currentLanguage = "ru";
-
-    languageBtn.addEventListener("click" , () => {
-    currentLanguage = currentLanguage ===currentLanguage
-    "ru" ? "en" : "ru";
-    document.querySelectorAll("[data-ru]").forEach(element => {
-        element.textContent = textContent = 
-        element.getAttribute('data-${currentLanguage}');
-    });
-
-    languageBtn.textContent = currentLanguage === "ru" ? "English" : "Русский";
-});
-</script>
     <header>
-        <h1 data-ru="Добро пожаловать" data-en="Welkome">Добро пожаловать</h1>
-        <p data-ru="Это мой сайт" data-en="This is my website">Это мой сайт</p>
+        <h1>Добро пожаловать</h1>
+        <p>Это мой сайт</p>
 
         <button class="menu-button" id="menuButton">
             <span></span>
@@ -51,14 +35,14 @@
         <img src="photo.jpg" alt="Моя фотография" class="profile-photo">
         <p class="hello">ПРИВЕТ 👋 </p>
 
-        <h1 data-ru="Добро пожаловать<br>на мой сайт!" data-en="Welcome<br>to my website!">Добро пожаловать<br> на мой сайт!</h1>
+        <h1>Добро пожаловать <br> на мой сайт!</h1>
 
         <p class="description">
             Здесь я рассказываю о себе,
             своих интересах и том, чему учусь.
         </p>
 
-        <a href="#about" data-ru="Узнать обо мне" data-en="Learn about me">Узнать обо мне →</a>
+        <a href="#about">Узнать обо мне →</a>
        </div>
     </section>
 
