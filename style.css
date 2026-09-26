@@ -287,8 +287,30 @@ nav a:hover::after {
 }
 
 .hero h1 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--green-dark);
 }
+
+.hero .description {
+    max-width: 650px;
+    margin: 0 auto 32px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text-soft);
+}
+
+.hero .hello {
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--green);
+}
+
 
 .description {
     max-width: 600px;
