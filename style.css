@@ -322,25 +322,38 @@ nav a:hover::after {
     font-size: 1.1rem;
 }
 
+
 .hero a {
     display: inline-block;
-
-    padding: 15px 28px;
+    padding: 15px 30px;
 
     background: var(--green);
     color: var(--white);
 
     border-radius: 50px;
-
+    font-size: 16px;
     font-weight: 700;
+    letter-spacing: 0.3px;
 
-    box-shadow: 0 10px 25px rgba(47, 111, 78, 0.25);
+    box-shadow: 0 10px 25px rgba(47, 111, 78, 0.22);
 
     transition:
         transform 0.3s ease,
-        background 0.3s ease,
-        box-shadow 0.3s ease;
+        box-shadow 0.3s ease,
+        background 0.3s ease;
 }
+
+.hero a:hover {
+    transform: translateY(-4px);
+    background: var(--green-dark);
+
+    box-shadow: 0 16px 32px rgba(47, 111, 78, 0.28);
+}
+
+.hero a:active {
+    transform: translateY(-1px);
+}
+
 
 .hero a:hover {
     transform: translateY(-4px);
